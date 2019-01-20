@@ -2,14 +2,14 @@ h1. Release Note
 
 h2. 0.2.4
 
-h3. ���{��
+h3. 日本語
 
-�@�\�ǉ�
-# �ȈՒ�����̃��b�Z�[�W�t�@�C���ǉ�
+機能追加
+# 簡易中国語のメッセージファイル追加
 
-�s��C��
-# �`�P�b�g�X�e�[�^�X�̕\���ʒu��ύX�����ꍇ�A���[�N�t���[�}�Ƀ��x�����������\������Ȃ�
-# E-mail �̒ʒm�̐ݒ�����Ă��Ȃ��̂ɁA ���[���ʒm�̏�񂪕\�������
+不具合修正
+# チケットステータスの表示位置を変更した場合、ワークフロー図にラベルが正しく表示されない
+# E-mail の通知の設定をしていないのに、 メール通知の情報が表示される
 
 h3. English
 
@@ -35,15 +35,15 @@ Defect
 # Routes error which the routes had been changed from revision 8162 of Redmine trunk.
 
 
-h3. ���{��
+h3. 日本語
 
-�@�\�ǉ�
-# Graphiviz(dot) �̃p�X���w��\�ɕύX
-# �؍���̃��b�Z�[�W�t�@�C���ǉ�
-# ��Ǝ��Ԃ̋L�^�Ɋւ��郊�|�W�g���R�����g�̐ݒ��\��
+機能追加
+# Graphiviz(dot) のパスを指定可能に変更
+# 韓国語のメッセージファイル追加
+# 作業時間の記録に関するリポジトリコメントの設定を表示
 
-�s��C��
-# �J���� Redmine(revision 8162) �� routes ���ύX���ꂽ���Ƃւ̑Ή�
+不具合修正
+# 開発版 Redmine(revision 8162) で routes が変更されたことへの対応
 
 
 
@@ -58,11 +58,11 @@ Feature
 
 ---
 
-�@�\�ǉ�
-# Redmine 2.0 �Ή�
-# �h�C�c��̃��b�Z�[�W�t�@�C���ǉ�
-# �ŏ��ɕ\�������y�[�W�����J�e�S���̃��j���[�ɕύX
-# �������|�[�g�̕\���̉���
+機能追加
+# Redmine 2.0 対応
+# ドイツ語のメッセージファイル追加
+# 最初に表示されるページを情報カテゴリのメニューに変更
+# 権限レポートの表示の改良
 
 
 h2. 1.0.1
@@ -75,11 +75,11 @@ Bugfix
 
 ---
 
-�@�\�ǉ�
-* Redmine 2.0.3 �Ή� (���[�e�B���O�̐ݒ��ǉ�)
+機能追加
+* Redmine 2.0.3 対応 (ルーティングの設定を追加)
 
-�s��C��
-* �v���O�C���̐ݒ�y�[�W�� Internal Error
+不具合修正
+* プラグインの設定ページの Internal Error
 
 
 h2. 1.0.2
@@ -90,7 +90,7 @@ Bugfix
 
 ---
 
-�s��C��
-* ���[�N�t���[�� Redmine 2.1 �Ή�
-* ���b�N�A�C�R���� Redmine 2.1 �Ή�
+不具合修正
+* ワークフローの Redmine 2.1 対応
+* ロックアイコンの Redmine 2.1 対応
 

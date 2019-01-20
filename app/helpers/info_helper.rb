@@ -16,7 +16,7 @@ module InfoHelper
     end
   end
 
-  
+
   def workflows_empty?(statuses, workflows)
     for old_status in @statuses
       for new_status in @statuses
@@ -37,8 +37,8 @@ module InfoHelper
     }
     return false
   end
-  
-  
+
+
   def workflow_has_author_assignee
     (1 < Redmine::VERSION::MAJOR ||
         (1 == Redmine::VERSION::MAJOR && 2 <= Redmine::VERSION::MINOR))
@@ -48,5 +48,5 @@ module InfoHelper
   # multiple issue update rules with different commit keywords.
   def commit_update_keywords_supported?
     2 <= Redmine::VERSION::MAJOR && 4 <= Redmine::VERSION::MINOR
-  end  
+  end
 end

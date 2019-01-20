@@ -3,7 +3,7 @@ require 'kconv'
 module GraphvizHelper
 
   include InfoHelper
-  
+
   def dot_line(name, options = {})
     line = name.to_s + " "
     unless options.empty?
@@ -20,10 +20,10 @@ module GraphvizHelper
     opts['dir'] = 'both'	if isboth
     dot_line("#{a} -> #{b}", opts)
   end
-  
+
   def dot_digraph(name, &blk)
     str = "digraph #{name} {"
-    str += yield 
+    str += yield
     str += "}"
   end
 
@@ -130,7 +130,7 @@ module GraphvizHelper
     end
     {:svg=>dest, :err=>errstr}
   end
-  
+
   def create_workflow_chart(graphname, statuses, wf, subwf)
     results = exec_dot(create_dot_digraph_workflow(graphname, statuses, wf, subwf))
     output = results[:svg]
@@ -139,5 +139,5 @@ module GraphvizHelper
     end
     output
   end
-  
+
 end
