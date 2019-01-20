@@ -2,7 +2,7 @@ require 'rails/info'
 
 class InfoController < ApplicationController
   unloadable
-  
+
   before_filter :require_login
 
   helper :info
@@ -30,8 +30,8 @@ class InfoController < ApplicationController
     @role = Role.find_by_id(params[:role_id])
 
     @trackers = Tracker.find(:all, :order => 'position')
-    @tracker = Tracker.find_by_id(params[:tracker_id])    
-    
+    @tracker = Tracker.find_by_id(params[:tracker_id])
+
     if @tracker && @tracker.issue_statuses.any?
       @statuses = @tracker.issue_statuses
     end
@@ -44,7 +44,7 @@ class InfoController < ApplicationController
       @workflows['author'] = workflows.select {|w| w.author}
       @workflows['assignee'] = workflows.select {|w| w.assignee}
     end
-      
+
   end
 
 
@@ -104,7 +104,7 @@ class InfoController < ApplicationController
     end
 
   end
-  
+
 
   def plugins
     @plugins = Redmine::Plugin.all
@@ -119,7 +119,7 @@ class InfoController < ApplicationController
     when 'settings'; settings;
     when 'plugins'; plugins;
     when 'version'
-      @db_adapter_name = ActiveRecord::Base.connection.adapter_name 
+      @db_adapter_name = ActiveRecord::Base.connection.adapter_name
     end
   end
 
@@ -127,7 +127,7 @@ class InfoController < ApplicationController
   def index
   end
 
-  
+
   private
   def find_all_ng_roles(workflow_counts)
     roles_map = {}
@@ -143,5 +143,5 @@ class InfoController < ApplicationController
     }
     return all_ng_roles
   end
-  
+
 end
